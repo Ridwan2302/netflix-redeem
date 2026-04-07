@@ -102,125 +102,67 @@
       z-index: 2;
       max-width: 640px;
       margin: 0 auto;
-      padding: 32px 16px 60px;
+      padding: 40px 20px 60px;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     .title {
-      font-size: 30px;
+      font-size: 32px;
       font-weight: 700;
       margin-bottom: 12px;
       text-shadow: 0 2px 10px rgba(0,0,0,0.6);
     }
     .subtitle {
-      font-size: 17px;
+      font-size: 18px;
       opacity: 0.92;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
       padding: 0 15px;
-      max-width: 420px;
     }
 
     .input-wrapper {
       margin-bottom: 24px;
       padding: 0 10px;
-      width: 100%;
-      max-width: 360px;
     }
     input {
       width: 100%;
-      height: 56px;
-      background: #1f1f1f;
-      border: 1px solid #333;
-      border-radius: 10px;
-      font-size: 18px;
-      padding: 0 20px;
+      height: 64px;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid #666;
+      border-radius: 8px;
+      font-size: 20px;
+      padding: 0 24px;
       color: #fff;
       text-align: center;
       font-family: inherit;
       transition: all 0.3s ease;
-      box-shadow: inset 0 1px 3px rgba(255,255,255,0.04);
     }
     input:focus {
       outline: none;
       border-color: var(--netflix-red);
-      box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.2);
+      box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.3);
     }
     input::placeholder {
       color: #aaa;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .btn-utiliser {
-      width: 100%;
-      max-width: 360px;
-      margin: 0 auto;
-      height: 54px;
+      width: calc(100% - 20px);
+      margin: 0 10px;
+      height: 64px;
       background: var(--netflix-red);
       color: #fff;
       border: none;
-      border-radius: 10px;
-      font-size: 18px;
+      border-radius: 8px;
+      font-size: 20px;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
-      box-shadow: 0 6px 18px rgba(229, 9, 20, 0.35);
-      display: block;
+      box-shadow: 0 6px 16px rgba(229, 9, 20, 0.4);
     }
     .btn-utiliser:active {
-      transform: scale(0.98);
-      box-shadow: 0 4px 12px rgba(229, 9, 20, 0.5);
-    }
-
-    @media (max-width: 520px) {
-      .title {
-        font-size: 24px;
-      }
-      .subtitle {
-        font-size: 15px;
-        margin-bottom: 32px;
-      }
-      .content-wrapper {
-        padding: 28px 14px 50px;
-      }
-      input {
-        height: 52px;
-        font-size: 16px;
-        padding: 0 18px;
-      }
-      .btn-utiliser {
-        height: 52px;
-        font-size: 16px;
-        max-width: 320px;
-      }
-      .footer-redeem {
-        font-size: 12px;
-      }
-      .home-logo {
-        height: 24px;
-        margin-right: 12px;
-      }
-      .home-nav {
-        gap: 14px;
-        font-size: 13px;
-      }
-      .greeting {
-        font-size: 20px;
-      }
-      .row-title {
-        font-size: 17px;
-      }
-      .poster-container {
-        width: 140px;
-      }
-      .poster-container img {
-        height: 210px;
-      }
-      .poster-title {
-        font-size: 12px;
-      }
+      transform: scale(0.97);
+      box-shadow: 0 4px 12px rgba(229, 9, 20, 0.6);
     }
     .btn-utiliser.loading {
       background: #666;
@@ -400,7 +342,7 @@
   <!-- HEADER REDEEM -->
   <div class="header">
     <img src="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" alt="Netflix" class="netflix-logo">
-    <button onclick="alert('Déconnexion simulée avec succès (test éducatif)')" class="se-deconnecter">
+    <button onclick="alert('✅ Déconnexion simulée avec succès (test éducatif)')" class="se-deconnecter">
       Se déconnecter
     </button>
   </div>
@@ -410,20 +352,18 @@
 
     <!-- Background collage of REAL posters -->
     <div class="poster-collage">
-      <img src="https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbCBUvZUvW.jpg" alt="Suits">
-      <img src="https://image.tmdb.org/t/p/w500/56v2KjBlU4XaOv9rVYEQypRvDN2.jpg" alt="Stranger Things">
       <img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg" alt="Stranger Things">
-      <img src="https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbCBUvZUvW.jpg" alt="Suits">
       <img src="https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg" alt="La Casa de Papel">
       <img src="https://image.tmdb.org/t/p/w500/luoKpgVwi1E5nQsi7W0UuKHu2Rq.jpg" alt="Bridgerton">
-      <img src="https://image.tmdb.org/t/p/w500/bgbQCW4fE9b6wSOSC6Fb4FfVzsW.jpg" alt="The Blacklist">
-      <img src="https://image.tmdb.org/t/p/w500/A7qR1L8IRXCkZ9inMxP9Tsta1n.jpg" alt="The Night Agent">
-      <img src="https://image.tmdb.org/t/p/w500/1MJNcPZy46hIyW8OYCgHpRrIYt.jpg" alt="The Crown">
-      <img src="https://image.tmdb.org/t/p/w500/7q448EVOnuE3gVAx24krzO7SNXM.jpg" alt="The Rookie">
       <img src="https://image.tmdb.org/t/p/w500/6tfT03sGp9k4c0J3dypjrI8TSA.jpg" alt="Wednesday">
       <img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Witcher">
-      <img src="https://image.tmdb.org/t/p/w500/7w06baRS9VPm5RYz8lawTCLiR4j.jpg" alt="Dark">
       <img src="https://image.tmdb.org/t/p/w500/3NTAbAiao4JLzFQw6YxP1YZppM3.jpg" alt="Narcos">
+      <img src="https://image.tmdb.org/t/p/w500/1MJNcPZy46hIyW8OYCgHpRrIYt.jpg" alt="The Crown">
+      <img src="https://image.tmdb.org/t/p/w500/7q448EVOnuE3gVAx24krzO7SNXM.jpg" alt="The Rookie">
+      <img src="https://image.tmdb.org/t/p/w500/A7qR1L8IRXCkZ9inMxP9Tsta1n.jpg" alt="The Night Agent">
+      <img src="https://image.tmdb.org/t/p/w500/bgbQCW4fE9b6wSOSC6Fb4FfVzsW.jpg" alt="The Blacklist">
+      <img src="https://image.tmdb.org/t/p/w500/6WBeq4fCfn7AN0o21W9qNcRvEsL.jpg" alt="Lupin">
+      <img src="https://image.tmdb.org/t/p/w500/7w06baRS9VPm5RYz8lawTCLiR4j.jpg" alt="Dark">
     </div>
     <div class="content-wrapper">
       <h1 class="title">Utilisez votre cadeau</h1>
@@ -464,24 +404,21 @@
         <span>Films</span>
         <span>Ma liste</span>
       </div>
-      <div class="home-icons">
-        <div class="avatar">D</div>
-      </div>
     </div>
 
     <div class="home-content">
-      <div class="greeting">Bonjour, Deji</div>
+      <div class="greeting">Bonjour, Deji 👋</div>
 
       <!-- Row 1 -->
       <div class="row">
         <div class="row-title">Tendances actuelles en Côte d'Ivoire</div>
         <div class="horizontal-scroll">
           <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg" alt="Stranger Things"><div class="poster-title">Stranger Things</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbCBUvZUvW.jpg" alt="Suits"><div class="poster-title">Suits</div></div>
           <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg" alt="La Casa de Papel"><div class="poster-title">La Casa de Papel</div></div>
           <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/luoKpgVwi1E5nQsi7W0UuKHu2Rq.jpg" alt="Bridgerton"><div class="poster-title">Bridgerton</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/bgbQCW4fE9b6wSOSC6Fb4FfVzsW.jpg" alt="The Blacklist"><div class="poster-title">The Blacklist</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/A7qR1L8IRXCkZ9inMxP9Tsta1n.jpg" alt="The Night Agent"><div class="poster-title">The Night Agent</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/6tfT03sGp9k4c0J3dypjrI8TSA.jpg" alt="Wednesday"><div class="poster-title">Wednesday</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Witcher"><div class="poster-title">The Witcher</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/3NTAbAiao4JLzFQw6YxP1YZppM3.jpg" alt="Narcos"><div class="poster-title">Narcos</div></div>
         </div>
       </div>
 
@@ -489,12 +426,12 @@
       <div class="row">
         <div class="row-title">Top 10 en France aujourd'hui</div>
         <div class="horizontal-scroll">
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/6tfT03sGp9k4c0J3dypjrI8TSA.jpg" alt="Wednesday"><div class="poster-title">Wednesday</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Witcher"><div class="poster-title">The Witcher</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/7w06baRS9VPm5RYz8lawTCLiR4j.jpg" alt="Dark"><div class="poster-title">Dark</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/3NTAbAiao4JLzFQw6YxP1YZppM3.jpg" alt="Narcos"><div class="poster-title">Narcos</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/7q448EVOnuE3gVAx24krzO7SNXM.jpg" alt="The Rookie"><div class="poster-title">The Rookie</div></div>
           <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/1MJNcPZy46hIyW8OYCgHpRrIYt.jpg" alt="The Crown"><div class="poster-title">The Crown</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/7q448EVOnuE3gVAx24krzO7SNXM.jpg" alt="The Rookie"><div class="poster-title">The Rookie</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/A7qR1L8IRXCkZ9inMxP9Tsta1n.jpg" alt="The Night Agent"><div class="poster-title">The Night Agent</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/bgbQCW4fE9b6wSOSC6Fb4FfVzsW.jpg" alt="The Blacklist"><div class="poster-title">The Blacklist</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/6WBeq4fCfn7AN0o21W9qNcRvEsL.jpg" alt="Lupin"><div class="poster-title">Lupin</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/7w06baRS9VPm5RYz8lawTCLiR4j.jpg" alt="Dark"><div class="poster-title">Dark</div></div>
         </div>
       </div>
 
@@ -503,10 +440,10 @@
         <div class="row-title">Séries que vous pourriez aimer</div>
         <div class="horizontal-scroll">
           <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/6WBeq4fCfn7AN0o21W9qNcRvEsL.jpg" alt="Lupin"><div class="poster-title">Lupin</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/1MJNcPZy46hIyW8OYCgHpRrIYt.jpg" alt="The Crown"><div class="poster-title">The Crown</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/6tfT03sGp9k4c0J3dypjrI8TSA.jpg" alt="Wednesday"><div class="poster-title">Wednesday</div></div>
+          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Witcher"><div class="poster-title">The Witcher</div></div>
           <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/7q448EVOnuE3gVAx24krzO7SNXM.jpg" alt="The Rookie"><div class="poster-title">The Rookie</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/luoKpgVwi1E5nQsi7W0UuKHu2Rq.jpg" alt="Bridgerton"><div class="poster-title">Bridgerton</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbCBUvZUvW.jpg" alt="Suits"><div class="poster-title">Suits</div></div>
-          <div class="poster-container"><img src="https://image.tmdb.org/t/p/w500/bgbQCW4fE9b6wSOSC6Fb4FfVzsW.jpg" alt="The Blacklist"><div class="poster-title">The Blacklist</div></div>
         </div>
       </div>
 
